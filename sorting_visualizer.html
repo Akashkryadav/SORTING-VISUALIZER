@@ -1,0 +1,80 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sorting_visualizer.css" />
+
+    <title>Sorting Visualizer</title>
+  </head>
+  <body class="bg">
+    <nav class="navigation-bar">
+      </div>
+      <div class="right">
+        <h1>SORTING VISUALIZER</h1>
+        <ul>
+          <li><button class="btn" id="bubble-sort">Bubble Sort</button></li>
+          <li>
+            <button class="btn" id="selection-sort">Selection Sort</button>
+          </li>
+          <li>
+            <button class="btn" id="insertion-sort">Insertion Sort</button>
+          </li>
+          <li><button class="btn" id="merge-sort">Merge Sort</button></li>
+          <li><button class="btn" id="quick-sort">Quick Sort</button></li>
+          
+          <li>
+            <div class="dark-mode-btn">
+            <div class="checkBoxWrapper">
+            <input type="checkbox" id="check">
+            <label for="check"></label>
+            </div>
+            <span>Light Mode</span>
+          </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main">
+      <div class="info">
+        <div class="algo-speed-wrapper">
+          <p>Speed :</p>
+          <input class="algo-speed" type="range" min="300" max="1200">
+      </div>
+        <div class="generate-array-wraper">
+          <p>Size of Array :</p>
+          <input class="array-size-range" type="range" min="10" max="165" />
+          <button class="generate">Generate Array</button>
+      </div>
+      <!-- <div>
+      <span id="speed">Speed
+        <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+    </span>
+  </div> -->
+      <div class="time-complexity">
+        <h3>TIME COMPLEXITY :-</h3>
+        <p class="worst-case">Worst Case :<span></span></p>
+        <p class="average-case">Average Case :<span></span></p>
+        <p class="best-case">Best Case :<span></span></p>
+      </div>
+
+      <div class="space-complexity time-complexity">
+        <h3>SPACE COMPLEXITY :-</h3>
+        <p class="worst-case-space">Worst Case :<span></span></p>
+      </div>
+
+      <div class="read-more">
+        <p><a  target="_blank">Read More About Merge Sort</a></p>
+      </div>
+      </div>
+      <div class="container"></div>
+    </div>
+    <script src="sorting_visualizer.js"></script>
+    <script src="script/selectionSort.js"></script>
+    <script src="script/bubbleSort.js"></script>
+    <script src="script/insertionSort.js"></script>
+    <script src="script/mergeSort.js"></script>
+    <script src="script/quickSort.js"></script>
+    
+  </body>
+</html>
